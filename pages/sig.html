@@ -1,0 +1,10 @@
+---
+layout: sigs
+title: "Sig"
+permalink: "/sigs/"
+---
+
+{% for sig in site.sigs %}
+<h2>{{ sig.name }} - {{ sig.position }}</h2>
+<p>{{ sig.content | markdownify }}</p>
+{% endfor %}
